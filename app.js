@@ -1,5 +1,8 @@
+import { configDotenv } from "dotenv";
+configDotenv();
 import express from "express";
 import { connectDB } from "./helper/db.js";
+
 
 const app = express();
 connectDB();
